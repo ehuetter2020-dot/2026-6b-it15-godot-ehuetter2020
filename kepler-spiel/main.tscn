@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c2h1t4hy1dyoc"]
+
+[node name="main" type="Node2D" unique_id=1110954043]
+position = Vector2(111, 162)
+
+[node name="Label" type="Label" parent="." unique_id=1414321735]
+offset_left = 109.0
+offset_top = 64.0
+offset_right = 758.0
+offset_bottom = 98.0
+theme_override_colors/font_color = Color(1, 1, 0.21960784, 1)
+theme_override_font_sizes/font_size = 24
+text = "Willkommen am BRG Kepler – Mein erstes Godot 4 Spiel!"
+
+[node name="Button" type="Button" parent="." unique_id=1832925478]
+offset_left = 417.0
+offset_top = 218.0
+offset_right = 504.0
+offset_bottom = 249.0
+text = "Klick mich
+"
