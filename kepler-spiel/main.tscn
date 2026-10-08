@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://c2h1t4hy1dyoc"]
 
+[ext_resource type="Script" uid="uid://ntnooxya5ucl" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://d1q6sh3b5vtfl" path="res://player_2d.gd" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://b5rp151mbdgjk" path="res://icon.svg" id="2_h2yge"]
+
 [node name="main" type="Node2D" unique_id=1110954043]
-position = Vector2(111, 162)
+script = ExtResource("1_ig7tw")
 
 [node name="Label" type="Label" parent="." unique_id=1414321735]
 offset_left = 109.0
@@ -19,3 +23,9 @@ offset_right = 504.0
 offset_bottom = 249.0
 text = "Klick mich
 "
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1878490051]
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
